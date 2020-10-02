@@ -1,0 +1,496 @@
+/* =================================
+  Element Styles
+==================================== */
+
+* {
+  box-sizing: border-box;
+}
+
+img {
+  max-width: 100%;
+  display: inline-block;
+}
+
+h1,
+h3 {
+  text-align: center;
+  color: rgb(85, 85, 85);
+  padding-top: 16px;
+  font-size: 1.5rem;
+}
+
+h1 {
+  font-size: 2.2rem;
+}
+
+header {
+  background-color: rgb(247, 247, 247);
+}
+
+a {
+  color: rgb(85, 85, 85);
+  text-decoration: none;
+}
+
+a:hover {
+  color: blue;
+}
+
+.container p {
+  text-align: center;
+  line-height: 1.5em;
+  padding-left: 10%;
+  padding-right: 10%;
+  color: rgb(85, 85, 85);
+  font-size: 20px;
+}
+
+#contact1 h3 {
+  padding-top: 3em;
+  padding-bottom: 1.5em;
+  text-transform: uppercase;
+  font-size: 1.1em;
+}
+
+span {
+  font-weight: bold;
+  color: rgb(131, 131, 131);
+  line-height: 50px;
+}
+
+.footer-nav {
+  background-color: rgba(247, 247, 247);
+  font-size: 1.4em;
+}
+
+address {
+  padding-bottom: 70px;
+}
+
+/* =================================
+  Base Layout Styles
+==================================== */
+
+/* ---- Navigation ---- */
+
+.name {
+  margin: 0;
+  padding-top: 1em;
+  padding-bottom: 1em;
+}
+
+.main-nav {
+  font-weight: bold;
+}
+
+.main-nav a {
+  display: block;
+  text-align: center;
+  padding: 1em;
+  background-color: white;
+  margin-top: 6px;
+
+}
+
+.profile {
+  text-align: center;
+}
+
+.profile img {
+  display: inline-block;
+  margin: auto;
+  padding-top: 3em;
+  padding-bottom: 2em;
+}
+
+.about p {
+  color: rgb(136, 132, 132);
+  font-size: 1.5rem;
+  padding-bottom: 2em;
+}
+
+
+
+/* ---- Layout Class ---- */
+
+.container {
+  width: 94%;
+  margin: 0 auto;
+  padding-bottom: 1em;
+  font-weight: 300;
+}
+
+
+#contact1 {
+  background-color: rgba(247, 247, 247);
+  text-align: center;
+  padding-left: 2em;
+  padding-right: 2em;
+  color: rgb(166, 163, 163);
+  font-size: 1.1em;
+  line-height: 1.5em;
+}
+
+.marketing-page {
+  padding-top: 12px;
+  padding-bottom: 1em;
+}
+
+.search-page {
+  padding-top: 12px;
+  padding-bottom: 1em;
+
+}
+
+.travel-app {
+  padding-top: 12px;
+  padding-bottom: 1em;
+
+}
+
+.map {
+  padding-top: 12px;
+  padding-bottom: 1em;
+
+}
+
+.photo-gallery {
+  padding-top: 12px;
+  padding-bottom: 1em;
+
+}
+
+.calculator {
+  padding-top: 12px;
+  padding-bottom: 1em;
+
+}
+
+#headline {
+  text-transform: uppercase;
+  padding-top: 1.2em;
+  padding-bottom: 1.2em;
+}
+
+.footer-nav {
+  width: 100%;
+  margin: auto;
+  padding-top: 35px;
+  padding-bottom: 10px;
+  overflow: auto;
+}
+
+
+.footer-nav li {
+  float: left;
+}
+
+.footer-nav2 li {
+  float: left;
+}
+
+/* ---- Page ID's ---- */
+
+#align-left {
+  width: 30%;
+  float: left;
+  margin-left: 2em;
+  font-weight: bold;
+  font-size: 1rem;
+}
+
+#align-right {
+  width: 50%;
+  float: right;
+  text-align: right;
+  padding-bottom: 20px;
+  padding-right: 15px;
+  text-transform: uppercase;
+  font-weight: bold;
+  font-size: 1rem;
+}
+
+#contact1:after {
+  content: "";
+  display: block;
+  width: 100%;
+  border-bottom: 2px solid rgb(221, 221, 221);
+}
+
+#home {
+  display: none;
+}
+
+#portfolio {
+  display: none;
+}
+
+#contact {
+  display: none;
+}
+
+
+
+/* =================================
+  Media Queries for tablet
+==================================== */
+
+@media screen and (min-width: 768px) {
+
+  main {
+    overflow: auto;
+  }
+
+  footer {
+    background-color: rgb(247, 247, 247);
+    ;
+  }
+
+  .about p {
+    float: left;
+    font-size: 1.3rem;
+  }
+
+  .about {
+    padding-top: 2em;
+    width: 50vw;
+  }
+
+  .container p {
+    height: 3em;
+  }
+
+  #contact1 {
+    background-color: inherit;
+  }
+
+  .right {
+    float: right;
+    width: 40vw;
+  }
+
+  .main-nav li {
+    display: inline-block;
+  }
+
+  .main-nav ul {
+    text-align: center;
+  }
+
+  .main-nav a {
+    background-color: inherit;
+    padding: 0em 2em;
+  }
+
+  .main-nav {
+    text-align: center;
+    display: flex;
+    justify-content: center;
+
+  }
+
+  .header {
+    overflow: auto;
+    padding-bottom: 3em;
+  }
+
+  .marketing-page {
+    float: left;
+    width: 49%;
+    margin-bottom: 3em;
+  }
+
+  .search-page {
+    float: right;
+    width: 49%;
+    margin-bottom: 3em;
+  }
+
+  .travel-app {
+    width: 49%;
+    float: left;
+    margin-bottom: 3em;
+  }
+
+  .map {
+    width: 49%;
+    float: right;
+    margin-bottom: 3em;
+  }
+
+  .photo-gallery {
+    width: 49%;
+    float: left;
+    margin-bottom: 3em;
+  }
+
+  .calculator {
+    width: 49%;
+    float: right;
+    margin-bottom: 3em;
+    padding-bottom: 3em;
+  }
+
+  #contact1 {
+    float: left;
+    width: 100%;
+  }
+
+  #contact1 p {
+    padding: 0 4em;
+  }
+
+  .footer-nav {
+    padding-bottom: 35px;
+    display: inline-block;
+    width: 48%;
+    overflow: auto;
+    background-color: inherit;
+  }
+
+  .footer-nav2 {
+    width: 100%;
+    padding-top: 35px;
+    padding-bottom: 35px;
+    display: inline-block;
+  }
+
+  /* ---- Page ID's ---- */
+
+  #intro {
+    padding: 0em;
+    text-align: left;
+  }
+
+  #align-right {
+    display: none;
+    /* visibility: hidden; */
+  }
+
+  #home {
+    display: inherit;
+    margin-right: 1em;
+    font-size: 1rem;
+    font-weight: bold;
+  }
+
+  #portfolio {
+    display: inherit;
+    margin-right: 1em;
+    font-size: 1rem;
+    font-weight: bold;
+  }
+
+  #contact {
+    display: inherit;
+    font-size: 1rem;
+    font-weight: bold;
+  }
+
+  .home-portfolio-contact {
+    float: right;
+    display: inherit;
+
+  }
+
+  .home-portfolio-contact a {
+    padding: 0 1.5em;
+  }
+
+}
+
+/* =================================
+  Media Queries for Desktop
+==================================== */
+
+@media screen and (min-width: 1024px) {
+
+  .main {
+    display: grid;
+    text-align: center;
+    width: 100%;
+    background-color: rgb(247, 247, 247);
+  }
+
+  .main .container {
+    background-color: white;
+
+  }
+
+  .container {
+    overflow: auto;
+  }
+
+  .container p {
+    padding: 0 1em;
+  }
+
+  #contact1 h3 {
+    padding-bottom: 1em;
+    margin-top: 0em;
+  }
+
+  .name {
+    text-align: left;
+    width: 30%;
+    display: inline-block;
+    padding-top: 2em;
+  }
+
+  .main-nav {
+    display: block;
+    float: right;
+    padding-top: 4.5em;
+    text-align: center;
+  }
+
+  .marketing-page {
+    width: 30%;
+    display: inline-block;
+    float: none;
+    vertical-align: top;
+    padding-right: 1em;
+    margin-bottom: 5em;
+  }
+
+  .search-page {
+    width: 30%;
+    display: inline-block;
+    float: none;
+    vertical-align: top;
+    padding-right: 1em;
+  }
+
+  .travel-app {
+    width: 30%;
+    display: inline-block;
+    float: none;
+    vertical-align: top;
+    padding-right: 1em;
+  }
+
+  .map {
+    width: 30%;
+    display: inline-block;
+    float: none;
+    vertical-align: top;
+    padding-right: 1em;
+  }
+
+  .photo-gallery {
+    width: 30%;
+    display: inline-block;
+    float: none;
+    vertical-align: top;
+    padding-right: 1em;
+  }
+
+  .calculator {
+    width: 30%;
+    display: inline-block;
+    float: none;
+    vertical-align: top;
+    padding-right: 1em;
+  }
+
+}
