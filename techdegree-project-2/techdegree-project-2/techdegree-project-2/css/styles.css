@@ -120,6 +120,17 @@ address {
   font-weight: 300;
 }
 
+
+#contact1 {
+  background-color: rgba(247, 247, 247);
+  text-align: center;
+  padding-left: 2em;
+  padding-right: 2em;
+  color: rgb(166, 163, 163);
+  font-size: 1.1em;
+  line-height: 1.5em;
+}
+
 .marketing-page {
   padding-top: 12px;
   padding-bottom: 1em;
@@ -153,6 +164,12 @@ address {
   padding-top: 12px;
   padding-bottom: 1em;
 
+}
+
+#headline {
+  text-transform: uppercase;
+  padding-top: 1.2em;
+  padding-bottom: 1.2em;
 }
 
 .footer-nav {
@@ -193,27 +210,11 @@ address {
   font-size: 1rem;
 }
 
-#contact1 {
-  background-color: rgba(247, 247, 247);
-  text-align: center;
-  padding-left: 2em;
-  padding-right: 2em;
-  color: rgb(166, 163, 163);
-  font-size: 1.1em;
-  line-height: 1.5em;
-}
-
 #contact1:after {
   content: "";
   display: block;
   width: 100%;
   border-bottom: 2px solid rgb(221, 221, 221);
-}
-
-#headline {
-  text-transform: uppercase;
-  padding-top: 1.2em;
-  padding-bottom: 1.2em;
 }
 
 #home {
@@ -259,14 +260,8 @@ address {
     height: 3em;
   }
 
-  .home-portfolio-contact {
-    float: right;
-    display: inherit;
-
-  }
-
-  .home-portfolio-contact a {
-    padding: 0 1.5em;
+  #contact1 {
+    background-color: inherit;
   }
 
   .right {
@@ -372,10 +367,6 @@ address {
     /* visibility: hidden; */
   }
 
-  #contact1 {
-    background-color: inherit;
-  }
-
   #home {
     display: inherit;
     margin-right: 1em;
@@ -394,6 +385,16 @@ address {
     display: inherit;
     font-size: 1rem;
     font-weight: bold;
+  }
+
+  .home-portfolio-contact {
+    float: right;
+    display: inherit;
+
+  }
+
+  .home-portfolio-contact a {
+    padding: 0 1.5em;
   }
 
 }
@@ -491,4 +492,5 @@ address {
     vertical-align: top;
     padding-right: 1em;
   }
+
 }
